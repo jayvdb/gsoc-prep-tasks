@@ -16,6 +16,7 @@ jobs:
     - stage: moban
       language: python
       python: 3.6
+      apt: false
       cache: pip
       before_install: false
       install: pip install moban
@@ -27,6 +28,7 @@ jobs:
       before_deploy: false
       deploy: false
       after_deploy: false
+      before_cache: false
 
 before_install:
   - npm config set spin false
