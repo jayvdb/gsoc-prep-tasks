@@ -15,8 +15,7 @@ before_install:
   - bower --version
   - phantomjs --version
 
-install:
-  - npm install
+before_install:
   - bower install
 
 script:
