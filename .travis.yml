@@ -17,6 +17,7 @@ jobs:
     - stage: moban
       language: python
       python: 3.6
+      node_js: false
       cache: pip
       before_install: false
       install: pip install moban
