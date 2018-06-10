@@ -12,14 +12,12 @@ cache:
 
 before_install:
   - npm config set spin false
-  - npm install -g bower phantomjs-prebuilt
   - bower --version
   - phantomjs --version
 
 install:
   - npm install
   - bower install
-  - npm install -g ember-cli
 
 script:
   - npm test
