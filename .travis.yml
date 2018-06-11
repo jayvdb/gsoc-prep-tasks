@@ -25,6 +25,7 @@ jobs:
       script: .ci/check_moban.sh
       after_success: false
       before_deploy: false
+      deploy: false
 
 before_install:
   - npm config set spin false
