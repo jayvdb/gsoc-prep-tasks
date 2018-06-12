@@ -2,9 +2,6 @@
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-const environment = process.env.EMBER_ENV;
-const isTesting = environment === 'test';
-
 module.exports = function emberCliBuild(defaults) {
   const app = new EmberApp(defaults, {
     // Add options here
