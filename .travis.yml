@@ -47,6 +47,7 @@ jobs:
       script: coala --non-interactive -V
 
 before_install:
+  - .ci/check_travis_deploy_vars.sh
   - npm config set spin false
 
 before_script:
