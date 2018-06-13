@@ -60,6 +60,7 @@ after_success:
 
 before_deploy:
   - ember build --env production
+  - if [[ ! "$GITHUB_TOKEN" ]]; then false; fi
 
 deploy:
   provider: pages
