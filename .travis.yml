@@ -37,7 +37,10 @@ jobs:
       stage: lint
       language: python
       python: 3.6
-      cache: pip
+      cache:
+        pip: true
+        directories:
+          - node_modules
       before_install:
         - export PATH=$PATH:./node_modules/.bin
         - export NODE_PATH=$NODE_PATH:./node_modules
