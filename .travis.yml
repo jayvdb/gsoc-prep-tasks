@@ -10,6 +10,11 @@ cache:
     - $HOME/.npm
     - $HOME/.cache  # includes bowers cache
 
+stages:
+  - lint
+  - moban
+  - test
+
 .disable_global: &disable_global
   node_js: false
   cache: false
