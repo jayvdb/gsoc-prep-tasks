@@ -15,8 +15,6 @@ indent_size = 2
 bears = ESLintBear
 eslint_config = .eslintrc.js
 files = **.js
-# See https://github.com/coala/coala-bears/issues/2533
-ignore += .eslintrc.js
 
 [all.markdown]
 bears = MarkdownBear
