@@ -49,7 +49,7 @@ jobs:
       install:
         - pip install git+https://github.com/coala/coala
         - pip install git+https://github.com/coala/coala-bears
-        - npm install --verbose --no-save --prefix $HOME/.cache/node_modules
+        - npm install --verbose --no-save --prefix $HOME/.cache/node_modules .
       script: coala --non-interactive -V
 
 before_install:
