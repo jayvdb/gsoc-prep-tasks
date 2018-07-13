@@ -48,7 +48,7 @@ jobs:
         - export NODE_PATH=$NODE_PATH:$HOME/.cache/node_modules
       install:
         - pip install git+https://github.com/coala/coala
-        - pip install git+https://github.com/coala/coala-bears
+        - pip install "git+https://github.com/coala/coala-bears@issue_2533"
         - npm install --no-save
         - mv node_modules $HOME/.cache/
       script: coala --non-interactive -V
